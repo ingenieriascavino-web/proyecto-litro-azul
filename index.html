@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Litro Azul | Cuida el agua</title>
+    <meta
+      name="description"
+      content="Sitio educativo sobre el cuidado del agua, la naturaleza y la tecnología para un futuro sostenible."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo-wrap">
+          <div class="logo">💧</div>
+          <span>Litro Azul</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#ciclo">Ciclo del agua</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#tips">Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Educación • Sostenibilidad • Tecnología</p>
+            <h1>Cuida cada gota, protege nuestro futuro.</h1>
+            <p class="lead">
+              Descubre cómo el agua sustenta la vida, cómo se mueve en la naturaleza
+              y cómo pequeñas acciones diarias pueden marcar una gran diferencia.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#calculadora">Calcular consumo</a>
+              <a class="btn btn-secondary" href="#tips">Ver consejos</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>70%</strong><span>del planeta</span></li>
+              <li><strong>1.2B</strong><span>personas</span></li>
+              <li><strong>+1L</strong><span>cada día</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="drop-card">
+              <div class="drop"></div>
+              <div class="water-ring ring-one"></div>
+              <div class="water-ring ring-two"></div>
+              <div class="info-badge badge-top">Ahorro</div>
+              <div class="info-badge badge-bottom">Sostenible</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ciclo" class="section about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Ciclo del agua</p>
+            <h2>El agua siempre vuelve a empezar.</h2>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <div class="icon">☀️</div>
+              <h3>Evaporación</h3>
+              <p>
+                El calor del sol transforma el agua de los océanos, ríos y suelos en vapor.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="icon">☁️</div>
+              <h3>Condensación</h3>
+              <p>
+                El vapor se enfría y forma nubes que luego transportan humedad a distintas zonas.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="icon">🌧️</div>
+              <h3>Precipitación</h3>
+              <p>
+                Cuando las nubes se saturan, cae lluvia o nieve y recarga ríos, lagos y acuíferos.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <div class="icon">🌿</div>
+              <h3>Escorrentía</h3>
+              <p>
+                Parte del agua vuelve al suelo, nutre la vegetación y mantiene los ecosistemas vivos.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="calculadora" class="section calculator-section">
+        <div class="container calculator-layout">
+          <div class="section-heading left">
+            <p class="eyebrow">Tu consumo diario</p>
+            <h2>Calcula cuánto agua usas.</h2>
+          </div>
+
+          <div class="calculator-box">
+            <div class="input-group">
+              <label for="duchas">Duchas al día</label>
+              <input id="duchas" type="number" min="0" value="1" />
+            </div>
+
+            <div class="input-group">
+              <label for="minutos">Minutos por ducha</label>
+              <input id="minutos" type="number" min="0" value="8" />
+            </div>
+
+            <div class="input-group">
+              <label for="lavado">Lavados de ropa por semana</label>
+              <input id="lavado" type="number" min="0" value="2" />
+            </div>
+
+            <div class="input-group">
+              <label for="personas">Personas en casa</label>
+              <input id="personas" type="number" min="1" value="4" />
+            </div>
+
+            <button id="calcular" class="btn btn-primary full">Calcular</button>
+
+            <div class="result-card">
+              <p>Consumo estimado</p>
+              <h3 id="resultado">0 L</h3>
+              <small id="mensaje">Tu consumo está dentro del rango promedio.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tips" class="section tips-section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Acciones prácticas</p>
+            <h2>Pequeños cambios, gran impacto.</h2>
+          </div>
+
+          <div class="tips-grid">
+            <article class="tip-card">
+              <span>🚿</span>
+              <h3>Cierra el grifo</h3>
+              <p>Mientras te enjabonas o te cepillas los dientes, reduce el gasto innecesario.</p>
+            </article>
+
+            <article class="tip-card">
+              <span>🧼</span>
+              <h3>Usa la lavadora con carga completa</h3>
+              <p>Ahorras agua y energía al optimizar cada ciclo de lavado.</p>
+            </article>
+
+            <article class="tip-card">
+              <span>🌱</span>
+              <h3>Riega temprano</h3>
+              <p>La humedad se retiene mejor y se reduce la evaporación del agua del jardín.</p>
+            </article>
+
+            <article class="tip-card">
+              <span>♻️</span>
+              <h3>Reutiliza</h3>
+              <p>El agua de la limpieza de frutas o el lavado de ropa puede reutilizarse para otros usos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Litro Azul</p>
+        <p>Un proyecto para cuidar el agua y la vida.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
